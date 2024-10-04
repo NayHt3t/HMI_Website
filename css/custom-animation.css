@@ -1,0 +1,103 @@
+.fly-in-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: flyInLeft 1s forwards;
+  }
+
+  @keyframes flyInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .fly-in-right {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: flyInRight 1s forwards;
+  }
+
+  @keyframes flyInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .fly-in-top {
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: flyInTop 1s forwards;
+  }
+
+  @keyframes flyInTop {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fly-in-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: flyInBottom 1s forwards;
+  }
+
+  @keyframes flyInBottom {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fly-in-diagonal-top-left {
+    opacity: 0;
+    transform: translate(-100%, -100%);
+    animation: flyInDiagonalTopLeft 1s forwards;
+  }
+
+  @keyframes flyInDiagonalTopLeft {
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  .fly-in-diagonal-top-right {
+    opacity: 0;
+    transform: translate(100%, -100%);
+    animation: flyInDiagonalTopRight 1s forwards;
+  }
+  
+  @keyframes flyInDiagonalTopRight {
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  .fly-in-diagonal-bottom-left {
+    opacity: 0;
+    transform: translate(-100%, 100%);
+    animation: flyInDiagonalBottomLeft 1s forwards;
+  }
+  
+  @keyframes flyInDiagonalBottomLeft {
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  .fly-in-diagonal-bottom-right {
+    opacity: 0;
+    transform: translate(100%, 100%);
+    animation: flyInDiagonalBottomRight 1s forwards;
+  }
+  
+  @keyframes flyInDiagonalBottomRight {
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
