@@ -114,4 +114,25 @@ body {
   object-fit: cover;
 }
 
+/* Academic Programs Page */
+.banner {
+  background-image: url('../images/banner-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+.banner-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+.content {
+  padding: 20px;
+}
+
  
