@@ -1,9 +1,31 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #F0F7FF;
   }
+
+  .padding-format {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .bg-hmi {
+    background-color: #21A7E0;
+  }
+
+  .career .accordion-button {
+    background-color: #21A7E0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .career .accordion-button:not(.collapsed) {
+    background-color: #21A7E0;
+    color: #fff;
+  }
+
 /* search box */
  .has-search .form-control {
-    margin-top: 4px;
     width: 50%;
     border-radius: 0;
     margin-left: 50%;
@@ -21,26 +43,58 @@ body {
     right: 0.5rem;
 }
 
+/* Navbar */
+.first-navbar {
+  background-color: #21A7E0;
+  height: 48px;
+}
+
+.second-navbar {
+  background-color: #fff;
+}
+
+.nav-link.custom-nav-link {
+  color: #000000;
+}
+
+/* nav-link.custom-nav-link:hover {
+  
+} */
+
+.nav-link.custom-nav-link.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  height: 30px;
+  background-color: #e6f8ff;
+  color: #21A7E0;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  border-bottom: 1.5px solid;
+}
+
   /* intro section */
   .intro {
-    background-color: #ecfafe;
+    background-color: #F0F7FF;
     padding: 50px 0;
     text-align: left;
   }
   .intro h1 {
     font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 20px;
   }
   .intro p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
     margin-bottom: 30px;
   }
-  .intro hr {
-    width: 20rem;
+  .intro .h-line {
+    width: 56%;
     height: 5px;
-    color: #0056b3;
-    margin: 0;
-    margin-left: 100px;
+    background-color: #21A7E0;
+    margin: 0 22% 0 22%;
     opacity: 100;
   }
   .btn-apply {
@@ -56,6 +110,24 @@ body {
   }
   .navbar-nav .nav-item {
     margin-right: 20px;
+  }
+
+  /* Course Section */
+section.courses, section.activity {
+  background-color: #051223;
+}
+
+  .logo-bullet {
+    width: 38.32px;
+    height: 36px;
+  }
+
+  .title-text {
+    font-size: 36px;
+    font-weight: 700;
+    color: #21A7E0;
+    margin-bottom: 0;
+    padding-left: 1rem;
   }
 
 /* Image Scroll Film */
@@ -138,6 +210,50 @@ body {
 /* tab-content */
 .tab-content {
   background-color: rgb(188, 241, 249);
+}
+
+/* footer section */
+.footer-text-title {
+  color: #21A7E0;
+  text-decoration: underline;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.footer p.footer-text-italic {
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer a {
+  text-decoration: unset;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer .footer-link.active a {
+  color: #21A7E0;
+}
+
+.footer .footer-link.active {
+  display: flex;
+  align-items: center;
+  width: 166px;
+  height: 30px;
+  background-color: #e6f8ff;
+  color: #21A7E0;
+  border-radius: 5px;
+  border-bottom: 1.5px solid;
+}
+
+.col-md-1 i.icon {
+  color: #21A7E0;
 }
 
  
