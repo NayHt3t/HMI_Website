@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academic Programs</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/custom-animation.css"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -16,17 +19,18 @@
     <div id="header"></div>
 
     <!-- Banner Section Start -->
-    <Section class="banner-section">
-        <div class="banner">
-            <div class="banner-text">
+    <Section class="section banner-section">
+        <div class="banner d-flex justify-content-center">
+            <div class="banner-text text-center text-primary">
                 <h1>Academic Programs</h1>
             </div>
         </div>
 
-        <div class="content container">
-            <div class="row">
+        <div class="content container py-5">
+            <div class="row px-3">
                 <div class="col-md-6">
-                    <p>In Host Myanmar Institute, we provide different programs relating to computer science. Lorem
+                    <p class="">In Host Myanmar Institute, we provide different programs relating to computer science.
+                        Lorem
                         ipsum dolor sit amet consectetur. Ornare neque euismod nisi interdum. Lobortis mauris dolor
                         vitae turpis adipiscing. Tortor enim a nec parturient lorem maecenas ullamcorper massa.</p>
                 </div>
@@ -41,10 +45,133 @@
     <!-- Banner Section End -->
 
     <!-- Program Intro Section Start -->
-    <section class="program-intro">
-        
+    <section class="section program-intro">
+        <div class="container py-5">
+            <div class="row text-center text-primary py-3" data-aos="fade-down">
+                <h2>2-year Software Engineer Certificate Program</h2>
+            </div>
+            <div class="row p-3" data-aos="fade-right">
+                <div class="col-md-5 pe-5">
+                    <p class="py-5"> <b>2-year Software Certificate Program (Job Readiness)</b> သည် ဂျပန်နိုင်ငံရှိ
+                        Information Technology Promotion Agency (API) နှင့်ပူးပေါင်းထားသော အာရှနိုင်ငံများရှိ
+                        သတင်းအချက်အလက်နှင့် နည်းပညာဆိုင်ရာစာမေးပွဲ Information Technology Professionals Examination
+                        Council (ITPEC) အားအခြေခံပြီး Software Engineering ဆိုင်ရာ လက်တွေ့လုပ်ငန်းခွင် On Job Training
+                        (OJT) အတွက် အကောင်အထည်ဖော်ထားခြင်းဖြစ်ပါသည်။ </p>
+                </div>
+                <div class="col-md-7">
+                    <img src="images/activities/image6.jpg" alt="activity-1" style="width: 100%; height: 20rem;"
+                        class="rounded">
+                </div>
+            </div>
+            <div class="row p-3 mt-3" data-aos="fade-left">
+                <div class="col-md-7">
+                    <img src="images/activities/image8.jpg" alt="activity-1" style="width: 100%; height: 20rem;"
+                        class="rounded">
+                </div>
+                <div class="col-md-5 ps-5">
+                    <p class="pt-5"> ဂျပန်နိုင်ငံနှင့်ပြည်တွင်းရှိ သတင်းအချက်အလက်နှင့် နည်းပညာအလုပ်ရုံ (Information
+                        Technology - IT industry) များတွင် ကျွမ်းကျင်သော Software Engineer အဖြစ် ရပ်တည်မည့်သူများအတွက်
+                        အချိန် (၂) နှစ်အတွင်း Software Engineering ဆိုင်ရာ အယူအဆနှင့်အတူ လုပ်ငန်းခွင်ဝင်ရောက်ရန်
+                        အဆင်သင့်ဖြစ်သည်အထိ လေ့ကျင့်သင်ကြားပေးမည့် program ဖြစ်ပါသည်။ </p>
+                    <p class="pt-2"> သင်တန်းပြီးမြောက်ပါက ITPEC စာမေးပွဲဝင်ရောက်ဖြေဆို၍ ပြည်တွင်းနှင့် ပြည်ပ IT industry
+                        များတွင် Software Engineer အဖြစ် ဝင်ရောက်လုပ်ကိုင်နိုင်မည့် အခွင့်အရေး ရရှိမည်ဖြစ်ပါသည်။ </p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Program Intro Section End -->
+
+    <!-- Program Detail Section Start -->
+    <section class="section program-details">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="academic-calender-tab" data-bs-toggle="tab"
+                                data-bs-target="#academic-calender" type="button" role="tab"
+                                aria-controls="academic-calender" aria-selected="true">Academic Calender</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="academic-fee-tab" data-bs-toggle="tab"
+                                data-bs-target="#academic-fee" type="button" role="tab" aria-controls="academic-fee"
+                                aria-selected="false">Academic Fees</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="study-plan-tab" data-bs-toggle="tab"
+                                data-bs-target="#study-plan" type="button" role="tab" aria-controls="study-plan"
+                                aria-selected="false">Study Plan</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- Academic Calender Content Start -->
+                        <div class="tab-pane fade show active" id="academic-calender" role="tabpanel"
+                            aria-labelledby="academic-calender-tab">
+                            <div class="container p-5">
+                                <div class="row text-justify">
+                                    <div class="col-md-12">
+                                        <p>
+                                            In Host Myanmar Institute, we provide different programs relating to
+                                            computer science. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Atque, veniam sapiente ullam debitis consequuntur unde beatae placeat quo,
+                                            similique provident quam dolores eos nesciunt magni reprehenderit, omnis
+                                            alias fuga saepe!
+                                        </p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="btn btn-success">May Intake</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="btn btn-success">Oct Intake</div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-center">
+                                                        <h4 class="text-primary">Year 1</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-md-4">
+                                                        <p class="ps-3">1st sem</p>
+                                                    </div>
+                                                    <div class="col-md-8 d-flex">
+                                                        <div class="bg-primary ms-2">
+                                                            May
+                                                        </div>
+                                                        <div class="bg-primary ms-2">
+                                                            May
+                                                        </div>
+                                                        <div class="bg-primary ms-2">
+                                                            May
+                                                        </div>
+                                                        <div class="bg-primary ms-2">
+                                                            May
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Academic Calender Content End -->
+
+                        <div class="tab-pane fade" id="academic-fee" role="tabpanel" aria-labelledby="academic-fee-tab">
+                            academic-fee content.</div>
+
+                        <div class="tab-pane fade" id="study-plan" role="tabpanel" aria-labelledby="study-plan-tab">
+                            study-plan content.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Program Detail Section End -->
 
     <!-- Footer -->
     <div id="footer"></div>
@@ -54,8 +181,16 @@
             $("#header").load("/layouts/header.html");
             $("#footer").load("/layouts/footer.html");
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1200,
+            });
+        });
+
     </script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

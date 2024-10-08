@@ -124,15 +124,20 @@ body {
 }
 .banner-text {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  bottom: -20px;
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 10px;
   border-radius: 5px;
 }
 .content {
-  padding: 20px;
+  background-color: rgb(227, 226, 226);
+  padding: 3rem;
+  max-width: 100%;
+}
+
+/* tab-content */
+.tab-content {
+  background-color: rgb(188, 241, 249);
 }
 
  
