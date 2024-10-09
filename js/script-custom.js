@@ -29,6 +29,10 @@ $(document).ready(function () {
   });
 });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 var ctx = document.getElementById('studentPieChart').getContext('2d');
 var studentPieChart = new Chart(ctx, {
   type: 'pie',
@@ -53,4 +57,6 @@ var studentPieChart = new Chart(ctx, {
     }
   }
 });
+
+
 
