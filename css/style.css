@@ -1,5 +1,29 @@
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/Aptos/Aptos-Light.ttf') format('woff2'),
+       url('../fonts/Aptos/Aptos-Light.ttf') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/Aptos/Aptos.ttf') format('woff2'),
+       url('../fonts/Aptos/Aptos.ttf') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('../fonts/Aptos/Aptos-Bold.ttf') format('woff2'),
+       url('../fonts/Aptos/Aptos-Bold.ttf') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Aptos', Arial, sans-serif;
     background-color: #F0F7FF;
   }
 
@@ -66,7 +90,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 166px;
-  height: 30px;
   background-color: #e6f8ff;
   color: #21A7E0;
   border-radius: 5px;
@@ -81,12 +104,12 @@ body {
     text-align: left;
   }
   .intro h1 {
-    font-size: 2.5rem;
+    font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
   }
   .intro p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 30px;
   }
@@ -112,6 +135,41 @@ body {
     margin-right: 20px;
   }
 
+  .intro .element-container {
+    position: relative;
+    /* width: 600px; 
+    height: 400px;  */
+  }
+  .intro .element-container .element-design img {
+    width: 100%;
+    height: auto;
+  }
+  .element {
+    position: absolute;
+    width: 30px;
+  }
+  .idea {
+    top: -10%;
+    left: 43%;
+    transform: translateX(-50%);
+  }
+  .spark-1 {
+    top: 10%;
+    left: 20%;
+  }
+  .edge-computing {
+    top: 35%;
+    left: 15%;
+  }
+  .binary {
+    top: 10%;
+    right: 28%;
+  }
+  .spark-2 {
+    top: 40%;
+    right: 22%;
+  }
+
   /* Course Section */
 section.courses, section.activity {
   background-color: #051223;
@@ -119,7 +177,7 @@ section.courses, section.activity {
 
 section.courses .card:hover {
   background-color: white;
-  box-shadow: 5px 5px 10px white;
+  box-shadow: 2px 2px 5px white;
 }
 
 section.courses .card i {
